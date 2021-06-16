@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from "../components/Navbar"
+import Layout from '../components/Layout'
 
 export default function resume() {
     return (
         <div>
-            <Navbar />
-            <button onclick="window.print();" id="download">Download CV as PDF</button>
+            <Layout>
+                <button onclick="window.print();" id="download">Download CV as PDF</button>
+            </Layout>
         </div>
     )
 }
