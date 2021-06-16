@@ -4,10 +4,10 @@ import React from 'react'
 export default function Navbar() {
     return (
         <nav>
-            <h1>JO</h1>
+            <img src="/jo.logo.svg"/>
             <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
+                <Link className="lik" to="/">Home</Link>
+                <Link className="lik" to="/about">About</Link>
             </div>
         </nav>
     )

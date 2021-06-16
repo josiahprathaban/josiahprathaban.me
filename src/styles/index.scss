@@ -1,7 +1,39 @@
-.banner{
-    width: 500px;
-    position: fixed;
-    top: 50px;
-    right: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+.banner img{
+    max-width: 500px;
+    width: 100%;
+}
+
+.text h1{
+    color: rgb(52, 53, 92);
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.text h2{
+    color: rgb(52, 53, 92);
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.text h3{
+    color: rgb(52, 53, 92);
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+section{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }

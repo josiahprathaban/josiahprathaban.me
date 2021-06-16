@@ -6,9 +6,18 @@ export default function Home() {
   return (
   <div>
     <Layout>
-      Hello world!
-      <a href="https://josiahprathaban.github.io/josiahprathaban.resume/" target="_blank" rel="noreferrer">Resume</a>
-      <img src="/jo_animated.svg" alt="banner" className="banner"/>
+      <section>
+        <div className="text">
+          <h2>Hi!</h2>
+          <h1>I'm Josiah Prathaban</h1>
+          <h3>Developer | Designer</h3>
+        </div>
+
+        <div className="banner">
+          <img src="/jo_animated.svg" alt="banner"/>
+          <div></div>
+        </div> 
+      </section>
     </Layout>
   </div>)
 }

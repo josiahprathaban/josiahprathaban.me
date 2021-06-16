@@ -6,3 +6,24 @@ body{
     min-height: 100%;
     background-color: rgb(255, 255, 255);
 }
+
+nav{
+    margin: 0 20px;
+    padding: 10px;
+}
+
+nav h1{
+    display:inline;
+}
+nav .links{
+    display:inline;
+    float: right;
+}
+
+nav .links .lik{
+    margin: 0 10px;
+}
+
+nav img{
+    width: 50px;
+}
