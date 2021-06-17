@@ -12,11 +12,14 @@ export default function Layout({ children }) {
                 <title>Josiah Prathaban</title>
                 <link rel="icon" href="/favicon.svg" />
             </Helmet>
-            <Navbar/>
-            <div className="content">
-                { children }
+            <div className="texture"></div>
+            <div>
+                <Navbar/>
+                <div className="content">
+                    { children }
+                </div>
+                <Footer/>
             </div>
-            <Footer/>
         </div>
     )
 }

@@ -5,12 +5,25 @@ html, body{
 }
 
 body{
+    margin: 0;
     min-height: 100%;
     background-color: rgb(255, 255, 255);
 }
 
+.layout{
+    display: grid;
+    grid-template-columns: 10% 90%;
+
+}
+
+.texture{
+    min-height: 100vh;
+    background-image: url('/texture.svg');
+    background-size: contain;
+}
+
 nav{
-    margin: 0 20px;
+    margin: 20px;
     padding: 10px;
 }
 
@@ -35,19 +48,19 @@ nav .links .link:hover{
 }
 
 nav img{
-    width: 50px;
+    width: 70px;
 }
 
 footer{
     font-family: 'Chelsea Market', cursive;
     text-align: center;
-    color: rgb(52, 53, 92);
+    color: rgba(52, 53, 92, 0.651);
     font-size: 13px;
     padding-top: 50px;
 }
 
 footer p{
     display: inline;
-    border-top: 1px solid rgba(52, 53, 92, 0.493);
+    border-top: 1px solid rgba(52, 53, 92, 0.308);
     padding: 10px 30px;
 }
