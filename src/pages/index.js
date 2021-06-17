@@ -8,8 +8,8 @@ export default function Home() {
     <Layout>
       <section>
         <div className="text">
-          <h2>Hi!</h2>
-          <h1>I'm Josiah Prathaban</h1>
+        <img src="/jo.back.svg" alt="text"/>
+          <h1>Josiah Prathaban</h1>
           <h3>Developer | Designer</h3>
         </div>
 

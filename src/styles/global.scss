@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
 html, body{
     min-height: 100%;
 }
@@ -20,10 +22,32 @@ nav .links{
     float: right;
 }
 
-nav .links .lik{
+nav .links .link{
+    padding: 5px 10px;
     margin: 0 10px;
+    text-decoration: none;
+    color: rgb(52, 53, 92);
+    font-family: 'Chelsea Market', cursive;
+}
+
+nav .links .link:hover{
+    border-bottom: 1px solid rgb(52, 53, 92);
 }
 
 nav img{
     width: 50px;
+}
+
+footer{
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+    color: rgb(52, 53, 92);
+    font-size: 13px;
+    padding-top: 50px;
+}
+
+footer p{
+    display: inline;
+    border-top: 1px solid rgba(52, 53, 92, 0.493);
+    padding: 10px 30px;
 }

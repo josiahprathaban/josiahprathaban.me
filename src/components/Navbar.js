@@ -6,8 +6,10 @@ export default function Navbar() {
         <nav>
             <img src="/jo.logo.svg"/>
             <div className="links">
-                <Link className="lik" to="/">Home</Link>
-                <Link className="lik" to="/about">About</Link>
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/">About</Link>
+                <Link className="link" to="/">Development Works</Link>
+                <Link className="link" to="/">Design Works</Link>
             </div>
         </nav>
     )

@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 
 .banner img{
     max-width: 500px;
     width: 100%;
 }
-
+.text{
+    position: relative;
+    font-family: 'Clicker Script', cursive;
+}
 .text h1{
     color: rgb(52, 53, 92);
     text-align: center;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: lighter;
     margin: 0;
 }
@@ -17,7 +19,6 @@
 .text h2{
     color: rgb(52, 53, 92);
     text-align: center;
-    font-family: 'Kaushan Script', cursive;
     font-size: 30px;
     font-weight: lighter;
     margin: 0;
@@ -26,10 +27,19 @@
 .text h3{
     color: rgb(52, 53, 92);
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Chelsea Market', cursive;
     font-size: 25px;
     font-weight: 300;
     margin: 0;
+}
+
+.text img{
+    opacity: 0.1;
+    bottom: 35px;
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 200px);
+    z-index: -1;
 }
 section{
     margin: 5%;
