@@ -11,11 +11,11 @@ export default function Home() {
         <img src="/jo.back.svg" alt="text"/>
           <h1>Josiah Prathaban</h1>
           <h3>Developer | Designer</h3>
+          <a href="https://josiahprathaban.github.io/josiahprathaban.resume/" target="_blank" rel="noreferrer">My Resume</a>
         </div>
 
         <div className="banner">
           <img src="/jo_animated.svg" alt="banner"/>
-          <div></div>
         </div> 
       </section>
     </Layout>

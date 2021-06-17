@@ -17,7 +17,8 @@ body{
 }
 
 .texture{
-    min-height: 100vh;
+    height: calc(100% + 20px);
+    min-height: calc(100vh - 20px);
     background-image: url('/texture.svg');
     background-size: contain;
 }
@@ -25,17 +26,19 @@ body{
 nav{
     margin: 20px;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 70px auto;
 }
 
 nav h1{
     display:inline;
 }
 nav .links{
-    display:inline;
-    float: right;
+    text-align: right;
 }
 
 nav .links .link{
+    display: inline-block;
     padding: 5px 10px;
     margin: 0 10px;
     text-decoration: none;
@@ -63,4 +66,28 @@ footer p{
     display: inline;
     border-top: 1px solid rgba(52, 53, 92, 0.308);
     padding: 10px 30px;
+}
+
+
+@media only screen and (max-width: 610px) {
+    nav .links .link{
+        font-size: 15px;
+        padding: 5px;
+    margin: 0 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 510px) {
+    nav .links .link{
+        padding: 0 2px;
+        
+        margin-bottom: 5px;
+    }
+
+    nav{
+        margin: 20px 10px;
+        padding: 0px;
+    }
+    
 }
