@@ -4,23 +4,92 @@ html, body{
     min-height: 100%;
 }
 
+.light{
+    color: rgb(52, 53, 92);
+    .layout{
+        background-color: rgb(255, 255, 255);
+    }
+    a{
+        color: rgb(52, 53, 92);
+    }
+    h3{
+        color: rgb(52, 53, 92);
+    }
+    .mode{
+        background-color: rgb(255, 244, 179);
+    }
+    .texture{
+        background-image: url('/texture_light.svg');
+    }
+    nav .logo{
+        background-image: url('/jo_logo_light.svg');
+    }
+}
+
+.dark{
+    color: rgb(255, 255, 255);
+    .layout{
+        background-color: rgb(27, 28, 37);
+    }
+    a{
+        color: rgb(255, 244, 179);
+    }
+    h3{
+        color: rgb(255, 244, 179);
+    }
+    .mode{
+        background-color: rgb(58, 58, 88);
+    }
+    .texture{
+        background-image: url('/texture_dark.svg');
+    }
+    nav .logo{
+        background-image: url('/jo_logo_dark.svg');
+    }
+}
+
 body{
     margin: 0;
     min-height: 100%;
-    background-color: rgb(255, 255, 255);
 }
 
 .layout{
     display: grid;
     grid-template-columns: 10% 90%;
-
+    min-height: 100vh;
+    z-index: -1;
 }
 
 .texture{
-    height: calc(100% + 20px);
-    min-height: calc(100vh - 20px);
-    background-image: url('/texture.svg');
     background-size: contain;
+}
+
+.mode{
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    position: fixed;
+    right: 5%;
+    top: 27%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation-name: attract;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes attract {
+    0%   {width: 50px; height: 50px;}
+    50%  {width: 55px; height: 55px; right: calc(5% - 2.5px);}
+    100% {width: 50px; height: 50px;}
+  }
+
+.mode img{
+    width: 100%;
 }
 
 nav{
@@ -42,7 +111,6 @@ nav .links .link{
     padding: 5px 10px;
     margin: 0 10px;
     text-decoration: none;
-    color: rgb(52, 53, 92);
     font-family: 'Chelsea Market', cursive;
 }
 
@@ -50,22 +118,24 @@ nav .links .link:hover{
     border-bottom: 1px solid rgb(52, 53, 92);
 }
 
-nav img{
+nav .logo{
     width: 70px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 footer{
     font-family: 'Chelsea Market', cursive;
     text-align: center;
-    color: rgba(52, 53, 92, 0.651);
     font-size: 13px;
     padding-top: 50px;
 }
 
 footer p{
     display: inline;
-    border-top: 1px solid rgba(52, 53, 92, 0.308);
-    padding: 10px 30px;
+    border-top: 1px solid rgb(180, 180, 189);
+    padding: 10px 30px 0 ;
 }
 
 

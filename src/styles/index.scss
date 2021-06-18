@@ -8,7 +8,6 @@
     font-family: 'Clicker Script', cursive;
 }
 .text h1{
-    color: rgb(52, 53, 92);
     text-align: center;
     font-size: 70px;
     font-weight: lighter;
@@ -16,7 +15,6 @@
 }
 
 .text h2{
-    color: rgb(52, 53, 92);
     text-align: center;
     font-size: 30px;
     font-weight: lighter;
@@ -24,7 +22,6 @@
 }
 
 .text h3{
-    color: rgb(52, 53, 92);
     text-align: center;
     font-family: 'Chelsea Market', cursive;
     font-size: 25px;
@@ -38,7 +35,7 @@
     position: absolute;
     width: 400px;
     left: calc(50% - 200px);
-    z-index: -1;
+    z-index: 1;
 }
 
 
