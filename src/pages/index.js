@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         <div className="banner">
-          <img src="/jo_animated.svg" alt="banner"/>
+          <img src="/jo.svg" alt="banner"/>
         </div> 
       </section>
     </Layout>
